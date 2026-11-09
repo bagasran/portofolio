@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Bagas Randika Pratama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <style>
+    /* CSS Khusus Cetak A4 / Export to PDF */
+    :root {
+      --primary: #0f172a;
+      --accent: #1d4ed8;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg-subtle: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text);
+      background-color: #f1f5f9;
+      line-height: 1.5;
+      padding: 24px;
+      font-size: 13px;
+    }
+
+    /* Print Preview Container */
+    .cv-page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 20mm 18mm;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+    }
+
+    /* Header */
+    .cv-header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .header-left h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .header-left .role-tag {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 4px;
+    }
+
+    .header-contact {
+      text-align: right;
+      font-size: 11.5px;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .header-contact a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .header-contact i {
+      color: var(--accent);
+      width: 14px;
+      text-align: center;
+    }
+
+    /* Layout Sections */
+    .cv-section {
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-title i {
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+    /* Summary */
+    .summary-text {
+      color: var(--text);
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* Experience & Education Entries */
+    .entry-item {
+      margin-bottom: 12px;
+    }
+    .entry-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .entry-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .entry-org {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .entry-date {
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .entry-bullets {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 4px;
+    }
+
+    .entry-bullets li {
+      position: relative;
+      padding-left: 14px;
+      margin-bottom: 3px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+
+    .entry-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    /* Grid Keahlian / Skills */
+    .skills-grid-cv {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .skill-block {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 8px 10px;
+    }
+
+    .skill-block-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 3px;
+    }
+
+    .skill-block-items {
+      font-size: 11.5px;
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    /* Print Controls */
+    .print-bar {
+      width: 210mm;
+      margin: 0 auto 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 12px 18px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .btn-print {
+      background-color: var(--accent);
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+    }
+
+    .btn-print:hover {
+      background-color: #1e40af;
+    }
+
+    .print-tip {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .print-bar {
+        display: none !important;
+      }
+      .cv-page {
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+        padding: 12mm 15mm;
+        margin: 0;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bar tombol cetak (otomatis tersembunyi saat diprint) -->
+  <div class="print-bar">
+    <div class="print-tip">
+      <i class="fa-solid fa-circle-info" style="color: #1d4ed8;"></i>
+      Tip: Klik tombol <strong>Simpan sebagai PDF</strong>, lalu atur opsi <em>Margins: None / Default</em> di dialog print browser.
+    </div>
+    <button class="btn-print" onclick="window.print()">
+      <i class="fa-solid fa-print"></i> Cetak / Simpan ke PDF
+    </button>
+  </div>
+
+  <!-- Halaman CV A4 -->
+  <div class="cv-page">
+    
+    <!-- HEADER -->
+    <header class="cv-header">
+      <div class="header-left">
+        <h1>BAGAS RANDIKA PRATAMA</h1>
+        <div class="role-tag">System Analyst | Full-Stack Developer | UI/UX Designer | IT Support</div>
+      </div>
+      <div class="header-contact">
+        <div><i class="fa-solid fa-envelope"></i> <a href="mailto:bagass.randika@gmail.com">bagass.randika@gmail.com</a></div>
+        <div><i class="fa-brands fa-whatsapp"></i> +62 822-4692-4080 &bull; Bandung, Indonesia</div>
+        <div><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/bagas-randika-pratama-a5173b444/" target="_blank">linkedin.com/in/bagas-randika-pratama</a></div>
+        <div><i class="fa-brands fa-github"></i> github.com/bagasran</div>
+      </div>
+    </header>
+
+    <!-- RINGKASAN PROFESIONAL -->
+    <section class="cv-section">
+      <h2 class="section-title"><i class="fa-solid fa-user"></i> Ringkasan Profesional</h2>
+      <p class="summary-text">
+        Lulusan D3 Manajemen Informatika (IPK 3,73/4,00) dengan pengalaman proyek dan magang di PT Swamedia Informatika. Berpengalaman menganalisis kebutuhan pengguna dan bisnis, memodelkan sistem, merancang UI/UX, mengembangkan aplikasi web, serta melakukan pengujian fungsional.
+      </p>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section class="cv-section">
+      <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Pendidikan Formal</h2>
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Diploma 3 (D3) Manajemen Informatika</span> &mdash; 
+            <span class="entry-org">Universitas Logistik dan Bisnis Internasional (ULBI), Bandung</span>
+          </div>
+          <span class="entry-date">September 2023 &ndash; 2026</span>
+        </div>
+        <ul class="entry-bullets">
+          <li><strong>IPK: 3,73 / 4,00</strong> (Predikat Kelulusan: <em>Dengan Pujian / Cum Laude</em>).</li>
+          <li>Fokus Studi: Analisis Sistem Informasi, Rekayasa Perangkat Lunak, Basis Data, UI/UX, dan Arsitektur Komputer.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN KERJA -->
+    <section class="cv-section">
+      <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja &amp; Magang</h2>
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">System Analyst &amp; Full-Stack Developer Intern | Billing</span> &mdash; 
+            <span class="entry-org">PT Swamedia Informatika, Bandung</span>
+          </div>
+          <span class="entry-date">Maret 2026 &ndash; Mei 2026</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Menganalisis digitalisasi pengelolaan dokumen melalui BPMN As-Is dan To-Be; mengidentifikasi akar masalah dengan PIECES, Ishikawa, dan Five Whys, serta memprioritaskan fitur menggunakan model Kano.</li>
+          <li>Menganalisis kebutuhan sistem serta merancang Use Case Diagram, Class Diagram, dan antarmuka pengguna (UI/UX).</li>
+          <li>Mengembangkan SIPASET (Next.js, Supabase) untuk data pengguna, aset, ruangan, peminjaman, dan pemesanan ruangan.</li>
+          <li>Menerapkan pengajuan/persetujuan, status ketersediaan, validasi pengembalian, serta riwayat peminjaman/pemesanan.</li>
+          <li>Melakukan Black Box Testing dengan BVA untuk memvalidasi kesesuaian fungsi sistem dengan kebutuhan.</li>
+          <li>Menyusun 3 dokumen (300+ halaman): analisis/pengembangan sistem, dokumentasi perangkat lunak, dan petunjuk teknis.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROYEK AKADEMIK -->
+    <section class="cv-section">
+      <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Proyek Akademik</h2>
+      
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">SIPSS &bull; Sistem Informasi Pembayaran SPP Sekolah</span>
+            <span class="entry-org">System Analyst &amp; Web Developer</span>
+          </div>
+          <span class="entry-date">2025</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Menggali kebutuhan melalui observasi dan wawancara serta memetakan 3 proses administrasi keuangan dengan BPMN As-Is dan Human-Centered Design.</li>
+          <li>Menerjemahkan kebutuhan 3 peran pengguna menjadi user flow, wireframe, prototipe Figma, model data, serta diagram Use Case, Activity, Sequence, dan Class.</li>
+          <li>Membangun aplikasi web terpusat dengan PHP, Laravel, dan MySQL untuk pengelolaan siswa, kelas, pengguna, SPP, transaksi, dan laporan; memvalidasi fungsinya melalui Black Box Testing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN ORGANISASI -->
+    <section class="cv-section">
+      <h2 class="section-title"><i class="fa-solid fa-users"></i> Pengalaman Organisasi</h2>
+      
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">HMMI ULBI &mdash; Divisi Hubungan Masyarakat</span>
+          </div>
+          <span class="entry-date">Mei 2025 &ndash; Mei 2026</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Mengoordinasikan komunikasi dan informasi kegiatan HMMI serta relasi internal, organisasi mahasiswa, dan pihak eksternal.</li>
+        </ul>
+      </div>
+
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">HMMI ULBI &mdash; Divisi Sumber Daya Manusia</span>
+          </div>
+          <span class="entry-date">Mei 2024 &ndash; Mei 2025</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Mengoordinasikan anggota, memantau keterlibatan, serta mendukung kegiatan pengembangan kekompakan dan kualitas SDM.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN & KOMPETENSI -->
+    <section class="cv-section">
+      <h2 class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> Keahlian &amp; Kompetensi</h2>
+      <div class="skills-grid-cv">
+        <div class="skill-block">
+          <div class="skill-block-title">Analisis &amp; Pemodelan Sistem:</div>
+          <div class="skill-block-items">BPMN, UML, DFD, PIECES, Ishikawa, Five Whys, Kano, Human-Centered Design.</div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-title">Pengembangan Web &amp; Database:</div>
+          <div class="skill-block-items">PHP, Next.js, Laravel, React, TypeScript, JavaScript, HTML, CSS, Git, MySQL, Supabase, ERD, CDM, PDM.</div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-title">UI/UX &amp; Software Testing:</div>
+          <div class="skill-block-items">Figma, Wireframing, Prototyping, Black Box Testing, Boundary Value Analysis (BVA), Katalon Studio.</div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-block-title">Tools &amp; IT Support:</div>
+          <div class="skill-block-items">Bizagi Modeler, PowerDesigner, Microsoft Visio, Draw.io, Selenium, VS Code, Windows Environment.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERTIFIKASI -->
+    <section class="cv-section">
+      <h2 class="section-title"><i class="fa-solid fa-certificate"></i> Sertifikasi</h2>
+      <ul class="entry-bullets">
+        <li><strong>TOEIC Prediction Test:</strong> Skor 405 | Pusat Bahasa ULBI | 2026.</li>
+        <li><strong>SAP:</strong> Overview (SAP01) &amp; Introduction to ABAP Workbench (BC400) | 2025.</li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>

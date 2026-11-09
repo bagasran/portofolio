@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Bagas Randika Pratama - System Analyst & Web Developer. Lulusan D3 Manajemen Informatika ULBI dengan predikat Cum Laude (IPK 3,73)." />
+  <title>Bagas Randika Pratama | System Analyst & Web Developer</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-name">
+        Bagas Randika Pratama
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#experience" class="nav-link">Pengalaman</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#core-skills" class="nav-link">Core Skills</a>
+        <a href="#achievements" class="nav-link">Pencapaian</a>
+        <a href="#certifications" class="nav-link">Sertifikasi</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+        <a href="assets/cv-bagas.html" target="_blank" class="nav-cv-btn">
+          Lihat CV <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka navigasi">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-col">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Tersedia untuk Peluang Karir Baru &bull; Bandung, Indonesia</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bagas Randika Pratama
+          </h1>
+
+          <p class="hero-role">
+            System Analyst &bull; Full-Stack Developer &bull; UI/UX Designer &bull; IT Support
+          </p>
+
+          <p class="hero-description">
+            Lulusan <strong>D3 Manajemen Informatika</strong> dari <strong>Universitas Logistik dan Bisnis Internasional (ULBI)</strong> dengan predikat <strong>Cum Laude (IPK 3,73/4,00)</strong>. Berpengalaman proyek dan magang di <strong>PT Swamedia Informatika</strong> dalam menganalisis kebutuhan pengguna dan bisnis, memodelkan sistem, merancang UI/UX, mengembangkan aplikasi web (Next.js, Supabase, PHP, Laravel, MySQL), serta pengujian fungsional terstandarisasi.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              Lihat Proyek <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#core-skills" class="btn btn-outline">
+              Core Skills
+            </a>
+            <a href="assets/cv-bagas.html" target="_blank" class="btn btn-ghost">
+              <i class="fa-solid fa-file-invoice"></i> Lihat CV
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-num">3,73</span>
+              <span class="metric-label">IPK (Cum Laude)</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num">2+</span>
+              <span class="metric-label">Sistem Nyata</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num">23</span>
+              <span class="metric-label">Test Case BVA Valid</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-col">
+          <div class="photo-card">
+            <div class="photo-wrapper">
+              <img src="assets/profile.jpg" alt="Foto Bagas Randika Pratama" class="photo-img" />
+            </div>
+            <div class="photo-meta">
+              <div class="photo-name">Bagas Randika Pratama</div>
+              <div class="photo-sub">D3 Manajemen Informatika &bull; ULBI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TENTANG SAYA ===== -->
+    <section class="section section-border" id="about">
+      <div class="container">
+        <div class="section-label">TENTANG SAYA</div>
+        <h2 class="section-heading">Menjembatani Kebutuhan Bisnis &amp; Solusi Teknologi</h2>
+        
+        <div class="about-content-grid">
+          <div class="about-text">
+            <p>
+              Halo! Saya <strong>Bagas Randika Pratama</strong>, lulusan program studi <strong>D-III Manajemen Informatika</strong> dari <strong>Universitas Logistik dan Bisnis Internasional (ULBI)</strong> Bandung dengan predikat <strong>Cum Laude (IPK 3,73)</strong>. Saya memiliki ketertarikan kuat dalam menghubungkan proses bisnis operasional dengan solusi teknologi informasi yang efisien dan terstruktur.
+            </p>
+            <p>
+              Melalui pengalaman kerja sebagai <strong>System Analyst &amp; Web Developer</strong> di <strong>PT. Swamedia Informatika</strong>, saya terbiasa melakukan analisis kebutuhan bisnis secara mendalam—mulai dari pemodelan alur kerja dengan <strong>BPMN 2.0</strong>, perancangan arsitektur sistem berbasis <strong>UML</strong> (Use Case, Class, Activity, Sequence Diagram), analisis akar masalah menggunakan Diagram Ishikawa &amp; 5-Whys, hingga evaluasi kualitas sistem menggunakan kerangka kerja <strong>PIECES</strong> dan <strong>Model KANO</strong>.
+            </p>
+            <p>
+              Selain analisis sistem, saya memiliki kemampuan teknis dalam membangun aplikasi web berbasis cloud menggunakan <strong>Next.js 15, TypeScript, Supabase (PostgreSQL)</strong>, serta <strong>PHP Native &amp; MySQL</strong>, didukung pengujian terstandarisasi <strong>Black Box Testing (Boundary Value Analysis)</strong> dan otomasi <strong>Katalon Studio</strong>. Saya juga menguasai pemeliharaan perangkat kerja, troubleshooting hardware, serta instalasi dan konfigurasi sistem pada lingkungan <strong>Windows OS</strong>.
+            </p>
+          </div>
+
+          <div class="about-quick-info">
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="info-body">
+                <span class="info-title">Pendidikan Formal</span>
+                <span class="info-desc">D3 Manajemen Informatika, ULBI (IPK 3,73 &bull; Cum Laude)</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-building"></i></div>
+              <div class="info-body">
+                <span class="info-title">Pengalaman Kerja</span>
+                <span class="info-desc">System Analyst &amp; Web Developer di PT. Swamedia Informatika</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="info-body">
+                <span class="info-title">Organisasi Mahasiswa</span>
+                <span class="info-desc">Divisi Humas (2025-2026) &amp; Divisi SDM (2024-2025) HMMI ULBI</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-body">
+                <span class="info-title">Domisili</span>
+                <span class="info-desc">Bandung, Jawa Barat, Indonesia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PENGALAMAN KERJA ===== -->
+    <section class="section section-border" id="experience">
+      <div class="container">
+        <div class="section-label">PENGALAMAN</div>
+        <h2 class="section-heading">Pengalaman Kerja &amp; Praktik Industri</h2>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">System Analyst &amp; Full-Stack Developer Intern | Billing</h3>
+                <div class="timeline-org">
+                  <i class="fa-solid fa-building"></i> PT Swamedia Informatika &bull; Bandung
+                </div>
+              </div>
+              <span class="timeline-badge">Maret 2026 &ndash; Mei 2026</span>
+            </div>
+            
+            <p class="timeline-summary">
+              Berperan dalam analisis kebutuhan digitalisasi proses bisnis, perancangan arsitektur sistem, pengembangan aplikasi web terintegrasi, serta penjaminan mutu perangkat lunak.
+            </p>
+
+            <ul class="timeline-points">
+              <li>
+                <strong>Analisis Kebutuhan &amp; Pemodelan:</strong> Menganalisis digitalisasi pengelolaan dokumen melalui BPMN As-Is dan To-Be; mengidentifikasi akar masalah dengan PIECES, Ishikawa, dan Five Whys, serta memprioritaskan fitur menggunakan model Kano.
+              </li>
+              <li>
+                <strong>Perancangan Sistem &amp; UI/UX:</strong> Menganalisis kebutuhan sistem serta merancang Use Case Diagram, Class Diagram, dan antarmuka pengguna (UI/UX).
+              </li>
+              <li>
+                <strong>Pengembangan Sistem (SIPASET):</strong> Mengembangkan SIPASET (Next.js, Supabase) untuk pengelolaan data pengguna, aset, ruangan, peminjaman, dan pemesanan ruangan.
+              </li>
+              <li>
+                <strong>Alur Kerja &amp; Validasi:</strong> Menerapkan fitur pengajuan/persetujuan, status ketersediaan real-time, validasi pengembalian fisik, serta riwayat peminjaman/pemesanan.
+              </li>
+              <li>
+                <strong>Quality Assurance:</strong> Melakukan Black Box Testing dengan Boundary Value Analysis (BVA) untuk memvalidasi kesesuaian fungsi sistem dengan kebutuhan.
+              </li>
+              <li>
+                <strong>Dokumentasi Teknis:</strong> Menyusun 3 dokumen komprehensif (300+ halaman): analisis/pengembangan sistem, dokumentasi perangkat lunak, dan petunjuk teknis operasional.
+              </li>
+            </ul>
+
+            <div class="timeline-tags">
+              <span>BPMN 2.0</span>
+              <span>UML</span>
+              <span>Next.js</span>
+              <span>Supabase</span>
+              <span>PostgreSQL</span>
+              <span>Black Box BVA</span>
+              <span>Dokumentasi Teknis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYEK ===== -->
+    <section class="section section-border" id="projects">
+      <div class="container">
+        <div class="section-label">PROYEK</div>
+        <h2 class="section-heading">Proyek Sistem Informasi</h2>
+        <p class="section-subtext">Sistem informasi yang dibangun berdasarkan studi kasus nyata pada instansi dan institusi pendidikan.</p>
+
+        <div class="projects-grid">
+          <!-- Proyek 1: SIPARU -->
+          <div class="project-box">
+            <div class="project-top">
+              <span class="project-badge">Tugas Akhir D3 &bull; 2026</span>
+              <span class="project-client">PT. Swamedia Informatika</span>
+            </div>
+            
+            <h3 class="project-title">
+              SIPASET &mdash; Sistem Informasi Peminjaman Aset &amp; Ruangan Berbasis Web
+            </h3>
+            
+            <p class="project-desc">
+              Aplikasi web enterprise (Next.js &amp; Supabase) yang mengotomatisasi operasional pengelolaan inventaris aset perangkat kerja dan pemesanan ruangan rapat di PT Swamedia Informatika, menggantikan formulir manual dengan sistem persetujuan, monitoring status real-time, dan pelaporan terintegrasi.
+            </p>
+
+            <div class="project-highlight-box">
+              <div class="ph-title"><i class="fa-solid fa-circle-info"></i> Fitur &amp; Metodologi:</div>
+              <ul class="ph-list">
+                <li>Multi-role autentikasi: Admin dan Karyawan</li>
+                <li>Monitoring ketersediaan aset &amp; jadwal ruangan rapat real-time</li>
+                <li>Alur persetujuan (approval) peminjaman dan upload surat izin bertanda tangan</li>
+                <li>Validasi pengembalian aset, inspeksi fisik, dan sistem pencatatan denda</li>
+                <li>Pengujian sistem menggunakan Boundary Value Analysis (BVA) 23 test case</li>
+              </ul>
+            </div>
+
+            <div class="project-tech-row">
+              <span class="tech-pill">Next.js 15</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Supabase</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Tailwind CSS</span>
+              <span class="tech-pill">Katalon Studio</span>
+              <span class="tech-pill">BPMN / UML</span>
+            </div>
+          </div>
+
+          <!-- Proyek 2: SIPPSS -->
+          <div class="project-box">
+            <div class="project-top">
+              <span class="project-badge">Proyek II D3 &bull; 2025</span>
+              <span class="project-client">TK Dharma Kartini 2 Cimahi</span>
+            </div>
+            
+            <h3 class="project-title">
+              SIPSS &mdash; Sistem Informasi Pembayaran SPP Sekolah
+            </h3>
+            
+            <p class="project-desc">
+              Sistem informasi berbasis web yang mengotomatisasi 3 proses administrasi keuangan SPP di TK Dharma Kartini 2 dengan pendekatan Human-Centered Design, mencakup pengelolaan siswa, kelas, pengguna, pencatatan transaksi, cetak kwitansi, dan laporan terpusat.
+            </p>
+
+            <div class="project-highlight-box">
+              <div class="ph-title"><i class="fa-solid fa-circle-info"></i> Fitur &amp; Metodologi:</div>
+              <ul class="ph-list">
+                <li>Menerjemahkan kebutuhan 3 peran pengguna menjadi user flow, wireframe &amp; prototipe Figma</li>
+                <li>Diagram sistem komprehensif: Use Case, Activity, Sequence, dan Class Diagram</li>
+                <li>Pencatatan pembayaran SPP otomatis per bulan dengan validasi transaksi</li>
+                <li>Pencetakan bukti kwitansi pembayaran resmi langsung dari sistem</li>
+                <li>Pengujian fungsional modul sistem secara menyeluruh melalui Black Box Testing</li>
+              </ul>
+            </div>
+
+            <div class="project-tech-row">
+              <span class="tech-pill">PHP</span>
+              <span class="tech-pill">Laravel</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">Bootstrap 5</span>
+              <span class="tech-pill">BPMN 2.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CORE SKILLS SECTION (Sesuai Referensi Gambar 1) ===== -->
+    <section class="section section-border" id="core-skills">
+      <div class="container">
+        <div class="section-label">KOMPETENSI</div>
+        <h2 class="section-heading">Core Skills</h2>
+
+        <div class="core-skills-grid">
+          
+          <!-- Column 1: IT End User Support & Helpdesk -->
+          <div class="skill-col">
+            <div class="skill-col-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="skill-col-title">IT Support &amp; Helpdesk</h3>
+            <p class="skill-col-desc">
+              Memberikan dukungan teknis harian bagi pengguna, menangani insiden perangkat keras/lunak, dan menjaga kesiapan fasilitas kerja.
+            </p>
+            
+            <ul class="skill-col-list">
+              <li>PC/Laptop Hardware Maintenance &amp; Troubleshooting</li>
+              <li>Instalasi &amp; Konfigurasi Windows OS (Windows 10 &amp; 11 Pro)</li>
+              <li>Microsoft 365, Outlook, Word, Excel &amp; Teams</li>
+              <li>Periferal: Setup Printer Jaringan, Scanner, Proyektor</li>
+              <li>Remote Support (AnyDesk, TeamViewer, RDP)</li>
+              <li>Antivirus, Endpoint Security &amp; Data Backup</li>
+              <li>User Onboarding &amp; Panduan Pengguna (SOP)</li>
+            </ul>
+
+            <div class="skill-col-tools">
+              <span class="tool-tag"><i class="fa-solid fa-desktop"></i> AnyDesk / RDP</span>
+              <span class="tool-tag"><i class="fa-brands fa-microsoft"></i> Microsoft 365</span>
+              <span class="tool-tag"><i class="fa-brands fa-windows"></i> Windows 10 &amp; 11</span>
+            </div>
+
+            <div class="skill-col-proof">
+              <a href="#experience" class="proof-link">
+                Dukungan teknis &amp; operasional <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Network & Connectivity -->
+          <div class="skill-col">
+            <div class="skill-col-icon">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="skill-col-title">Network &amp; Connectivity</h3>
+            <p class="skill-col-desc">
+              Memastikan stabilitas jaringan kabel dan nirkabel kantor untuk mendukung kelancaran komunikasi dan operasional kerja.
+            </p>
+            
+            <ul class="skill-col-list">
+              <li>Pengkabelan LAN &amp; Crimping UTP RJ-45 (T568B)</li>
+              <li>Konfigurasi IP Address (IPv4, Static &amp; DHCP)</li>
+              <li>Troubleshooting DNS, Gateway &amp; Akses Internet</li>
+              <li>Setup Router Access Point &amp; Wi-Fi Kantor</li>
+              <li>File Sharing (SMB) &amp; Network Printer Sharing</li>
+              <li>Pengujian Jaringan (Ping, Traceroute, Netstat)</li>
+            </ul>
+
+            <div class="skill-col-tools">
+              <span class="tool-tag"><i class="fa-solid fa-wifi"></i> Access Point</span>
+              <span class="tool-tag"><i class="fa-solid fa-screwdriver-wrench"></i> LAN Crimper</span>
+              <span class="tool-tag"><i class="fa-solid fa-terminal"></i> Terminal / CMD</span>
+            </div>
+
+            <div class="skill-col-proof">
+              <a href="#about" class="proof-link">
+                Infrastruktur &amp; Lab Jaringan <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 3: IT Asset Management & Requirements Analysis -->
+          <div class="skill-col">
+            <div class="skill-col-icon">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <h3 class="skill-col-title">IT Asset &amp; System Analysis</h3>
+            <p class="skill-col-desc">
+              Mengelola siklus inventaris perangkat kerja, memetakan alur serah terima, dan mendiagnosis kendala operasional secara sistematis.
+            </p>
+            
+            <ul class="skill-col-list">
+              <li>IT Asset Lifecycle (Pengadaan, Peminjaman, Retur)</li>
+              <li>Tracking Serial Number &amp; Spesifikasi Perangkat</li>
+              <li>BPMN 2.0 (Business Process Modeling via Bizagi)</li>
+              <li>Root Cause Analysis (Diagram Ishikawa &amp; 5-Whys)</li>
+              <li>Evaluasi Kepuasan Pengguna (PIECES &amp; KANO)</li>
+              <li>Dokumentasi Spesifikasi Kebutuhan Sistem (SRS)</li>
+            </ul>
+
+            <div class="skill-col-tools">
+              <span class="tool-tag"><i class="fa-solid fa-circle-nodes"></i> Bizagi Modeler</span>
+              <span class="tool-tag"><i class="fa-solid fa-draw-polygon"></i> Draw.io</span>
+              <span class="tool-tag"><i class="fa-solid fa-diagram-project"></i> Sparx Systems EA</span>
+            </div>
+
+            <div class="skill-col-proof">
+              <a href="#projects" class="proof-link">
+                Bukti proyek: SIPARU (PT. Swamedia) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 4: Web Systems & Quality Assurance -->
+          <div class="skill-col">
+            <div class="skill-col-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 class="skill-col-title">Systems &amp; Quality Assurance</h3>
+            <p class="skill-col-desc">
+              Mengimplementasikan sistem informasi pendukung kerja serta memvalidasi keandalan fungsional melalui pengujian terstruktur.
+            </p>
+            
+            <ul class="skill-col-list">
+              <li>Next.js 15 (React.js) &amp; TypeScript</li>
+              <li>PHP Native &amp; Database CRUD</li>
+              <li>Cloud Database (Supabase PostgreSQL &amp; MySQL)</li>
+              <li>Black Box Testing (Boundary Value Analysis)</li>
+              <li>Automation Testing (Katalon Studio)</li>
+              <li>Pembuatan Panduan Pengguna (User Manual)</li>
+            </ul>
+
+            <div class="skill-col-tools">
+              <span class="tool-tag"><i class="fa-brands fa-react"></i> Next.js 15</span>
+              <span class="tool-tag"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="tool-tag"><i class="fa-solid fa-vial-circle-check"></i> Katalon Studio</span>
+            </div>
+
+            <div class="skill-col-proof">
+              <a href="#projects" class="proof-link">
+                Bukti pengujian: 23 Test Cases BVA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PENCAPAIAN & KONTRIBUSI (Sesuai Referensi Gambar 2) ===== -->
+    <section class="section section-border" id="achievements">
+      <div class="container">
+        <div class="section-label">PENCAPAIAN</div>
+        <h2 class="section-heading">Pencapaian &amp; Kontribusi</h2>
+
+        <div class="achievements-grid">
+          
+          <!-- Item 1: Cum Laude -->
+          <div class="achievement-item">
+            <div class="ach-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="ach-date">Agustus 2026 &bull; ULBI</div>
+            <h3 class="ach-title">Lulus dengan Predikat Cum Laude</h3>
+            <p class="ach-desc">
+              D3 Manajemen Informatika, <strong>IPK 3,73</strong>, dengan predikat <strong>Dengan Pujian (Cum Laude)</strong>. Menyelesaikan Tugas Akhir pembangunan sistem enterprise SIPARU pada PT. Swamedia Informatika.
+            </p>
+          </div>
+
+          <!-- Item 2: Himpunan Humas -->
+          <div class="achievement-item">
+            <div class="ach-icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div class="ach-date">Mei 2025 &ndash; Mei 2026 &bull; HMMI ULBI</div>
+            <h3 class="ach-title">Divisi Hubungan Masyarakat (Humas)</h3>
+            <p class="ach-desc">
+              Mengelola komunikasi eksternal organisasi, membangun kemitraan institusi, dan mempublikasikan berbagai program kerja Himpunan Mahasiswa Manajemen Informatika ULBI kepada mahasiswa dan khalayak umum.
+            </p>
+          </div>
+
+          <!-- Item 3: Himpunan SDM -->
+          <div class="achievement-item">
+            <div class="ach-icon">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <div class="ach-date">Mei 2024 &ndash; Mei 2025 &bull; HMMI ULBI</div>
+            <h3 class="ach-title">Divisi Sumber Daya Manusia (SDM)</h3>
+            <p class="ach-desc">
+              Bertanggung jawab atas kaderisasi, pengembangan kapasitas kepemimpinan anggota, evaluasi kinerja fungsionaris, serta pembinaan solidaritas internal organisasi himpunan mahasiswa.
+            </p>
+          </div>
+
+          <!-- Item 4: Implementasi Nyata -->
+          <div class="achievement-item">
+            <div class="ach-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="ach-date">2025 &ndash; 2026 &bull; PT. Swamedia &amp; TK Dharma Kartini 2</div>
+            <h3 class="ach-title">Implementasi &amp; Validasi Sistem Informasi</h3>
+            <p class="ach-desc">
+              Berhasil membangun 2 sistem informasi fungsional: sistem inventaris &amp; booking ruangan di PT. Swamedia Informatika, serta digitalisasi administrasi SPP di TK Dharma Kartini 2 dengan pengujian Black Box valid 100%.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERTIFIKASI SECTION ===== -->
+    <section class="section section-border" id="certifications">
+      <div class="container">
+        <div class="section-label">SERTIFIKASI</div>
+        <h2 class="section-heading">Sertifikasi &amp; Standar Kompetensi</h2>
+        <p class="section-subtext">Sertifikasi profesional dan hasil uji kecakapan yang telah diselesaikan.</p>
+
+        <div class="achievements-grid">
+          <!-- Cert 1: TOEIC -->
+          <div class="achievement-item">
+            <div class="ach-icon">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <div class="ach-date">2026 &bull; Pusat Bahasa ULBI</div>
+            <h3 class="ach-title">TOEIC Prediction Test &bull; Skor 405</h3>
+            <p class="ach-desc">
+              Uji kompetensi kecakapan bahasa Inggris standar kerja profesional internasional yang diselenggarakan oleh Pusat Bahasa Universitas Logistik dan Bisnis Internasional.
+            </p>
+          </div>
+
+          <!-- Cert 2: SAP -->
+          <div class="achievement-item">
+            <div class="ach-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="ach-date">2025 &bull; SAP University Alliances / ULBI</div>
+            <h3 class="ach-title">SAP: Overview (SAP01) &amp; ABAP Workbench (BC400)</h3>
+            <p class="ach-desc">
+              Sertifikasi pengenalan konsep Enterprise Resource Planning (ERP) SAP01 serta pengenalan dasar lingkungan pemrograman dan arsitektur sistem ABAP Workbench (BC400).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KONTAK SECTION (Sesuai Referensi Gambar 3) ===== -->
+    <section class="contact-dark-section" id="contact">
+      <div class="container">
+        <div class="contact-tag">KONTAK</div>
+        <h2 class="contact-main-title">Hubungi Saya</h2>
+        <p class="contact-lead-text">
+          Saya terbuka untuk peluang posisi <strong>System Analyst</strong>, <strong>Full-Stack Developer</strong>, <strong>UI/UX Designer</strong>, serta <strong>IT Support</strong>. Silakan hubungi saya untuk mendiskusikan posisi dan kebutuhan tim Anda.
+        </p>
+
+        <div class="contact-columns-grid">
+          
+          <!-- Column 1: Email -->
+          <div class="contact-col-item">
+            <div class="col-header-line"></div>
+            <div class="col-content">
+              <div class="col-icon-label">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email</span>
+              </div>
+              <a href="mailto:bagass.randika@gmail.com" class="col-link">
+                bagass.randika@gmail.com
+                <i class="fa-solid fa-arrow-up-right-from-square arrow-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: WhatsApp -->
+          <div class="contact-col-item">
+            <div class="col-header-line"></div>
+            <div class="col-content">
+              <div class="col-icon-label">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </div>
+              <a href="https://wa.me/6282246924080" target="_blank" rel="noopener noreferrer" class="col-link">
+                082246924080
+                <i class="fa-solid fa-arrow-up-right-from-square arrow-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 3: LinkedIn -->
+          <div class="contact-col-item">
+            <div class="col-header-line"></div>
+            <div class="col-content">
+              <div class="col-icon-label">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </div>
+              <a href="https://www.linkedin.com/in/bagas-randika-pratama-a5173b444/" target="_blank" rel="noopener noreferrer" class="col-link">
+                Bagas Randika Pratama
+                <i class="fa-solid fa-arrow-up-right-from-square arrow-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 4: GitHub -->
+          <div class="contact-col-item">
+            <div class="col-header-line"></div>
+            <div class="col-content">
+              <div class="col-icon-label">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <a href="https://github.com/bagasran" target="_blank" rel="noopener noreferrer" class="col-link">
+                bagasran
+                <i class="fa-solid fa-arrow-up-right-from-square arrow-link"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-bottom-actions">
+          <button class="btn-copy-email" id="copyEmailBtn" data-email="bagass.randika@gmail.com">
+            <i class="fa-regular fa-copy"></i>
+            <span id="copyBtnText">Salin alamat email</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-left">
+        <strong>Bagas Randika Pratama</strong> &bull; D3 Manajemen Informatika ULBI
+      </div>
+      <div class="footer-right">
+        &copy; 2026 Bagas Randika Pratama. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

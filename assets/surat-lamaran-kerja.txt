@@ -1,0 +1,42 @@
+Bandung, 10 November 2026
+
+Hal     : Lamaran Pekerjaan
+Lampiran: 4 (Empat) Berkas
+
+Kepada Yth.
+HRD / Bagian Rekrutmen
+[Nama Perusahaan]
+[Alamat Perusahaan]
+di Tempat
+
+Dengan hormat,
+
+Sehubungan dengan informasi lowongan pekerjaan yang saya peroleh mengenai posisi [Nama Posisi, contoh: Staf IT End User Support / System Analyst] di [Nama Perusahaan], melalui surat ini saya bermaksud untuk mengajukan diri guna bergabung dengan tim profesional di perusahaan yang Bapak/Ibu pimpin.
+
+Saya merupakan lulusan D-III Manajemen Informatika dari Universitas Logistik dan Bisnis Internasional (ULBI) Bandung dengan predikat kelulusan Cum Laude (IPK 3,73 / 4,00). Saya memiliki pengalaman kerja sebagai System Analyst & Web Developer di PT. Swamedia Informatika (Maret 2026 – Mei 2026), di mana saya terbiasa menganalisis proses bisnis operasional, mengelola inventaris aset perangkat kerja kantor, serta membangun dan menguji sistem informasi berbasis cloud (Next.js, Supabase PostgreSQL, PHP, dan MySQL).
+
+Beberapa kompetensi utama yang dapat saya kontribusikan meliputi:
+1. Dukungan Teknis & Endpoint (Windows Environment): Terbiasa melakukan instalasi, konfigurasi, dan troubleshooting perangkat keras PC/Laptop, sistem operasi Windows 10 & 11 Pro, aplikasi perkantoran Microsoft 365, serta periferal kantor (printer jaringan, scanner, proyektor).
+2. Jaringan & Konektivitas Dasar: Memahami pengkabelan LAN (crimping RJ-45), konfigurasi IP Address (Static/DHCP), troubleshooting DNS/Gateway, serta setup router access point dan file sharing.
+3. Analisis Sistem & Siklus Aset TI: Terbiasa memetakan alur proses bisnis dengan BPMN 2.0, menyusun spesifikasi kebutuhan sistem (SRS), serta melakukan penjaminan mutu fungsional dengan Black Box Testing (Boundary Value Analysis).
+4. Komunikasi & Pelayanan: Pengalaman organisasi aktif pada Divisi Hubungan Masyarakat (Humas) dan Divisi Sumber Daya Manusia (SDM) di HMMI ULBI membekali saya dengan kemampuan komunikasi yang empatik, kesabaran, serta sikap solutif dalam menangani kebutuhan pengguna dari berbagai latar belakang.
+
+Sebagai bahan pertimbangan Bapak/Ibu, bersama surat ini saya lampirkan:
+1. Curriculum Vitae (CV) terbaru
+2. Tautan Portofolio Digital: [Link Portofolio / c:/Users/USER/portofolio/index.html]
+3. Salinan Ijazah dan Transkrip Nilai Akademik
+4. Salinan Sertifikat & Berkas Pendukung Lainnya
+
+Besar harapan saya untuk diberikan kesempatan menghadiri sesi wawancara guna memaparkan lebih mendalam mengenai kualifikasi dan dedikasi yang dapat saya berikan bagi perkembangan [Nama Perusahaan].
+
+Demikian surat lamaran ini saya sampaikan. Atas perhatian dan kesempatan yang Bapak/Ibu berikan, saya ucapkan terima kasih.
+
+
+Hormat saya,
+
+(tanda tangan)
+
+Bagas Randika Pratama
+No. HP / WhatsApp: 0822-4692-4080
+Email: bagass.randika@gmail.com
+LinkedIn: linkedin.com/in/bagasrandika
